@@ -7,24 +7,37 @@
 }
 
 /* shared style */
-.description{
+.description {
   font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.btn-primary{
+.btn-primary {
   color: white;
   line-height: 22px;
   border: none;
   font-size: 1.1rem;
-  font-weight:500;
+  font-weight: 500;
   border-radius: 42px;
   padding: 16px 40px;
   margin: 20px auto;
+  cursor: pointer;
   background-color: rgb(230, 83, 60);
+}
 
+.btn-secondary {
+  color: white;
+  line-height: 22px;
+  border: 1px solid white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 42px;
+  padding: 16px 40px;
+  margin-left: 15px;
+  cursor: pointer;
+  background-color: black;
 }
 
 /* navbar style start */
@@ -38,6 +51,7 @@ header {
   background-repeat: no-repeat;
   color: white;
   max-width: 1440px;
+  height: 740px;
   margin: 0 auto;
 }
 .nav-main {
@@ -82,29 +96,28 @@ header {
   display: none;
 }
 /* navbar style end */
-/* Banner style start */
-.banner-container{
-  max-width: 1440px;
+
+/* banner style start */
+
+.banner-container {
   display: flex;
-  margin: 0 auto;
-  justify-content: center;
-}
-.banner-text-area{
-  width: 45%;
-  text-align: center;
+  justify-content: space-around;
 }
 
-.banner-title{
-  font-size: 78px;
+.banner-text-area {
+  margin: 30px 60px;
+}
+
+.banner-title {
+  font-size: 4.5rem;
   font-weight: 900;
 }
 
-.banner-img-area{
-  border: 1px solid yellow;
-  width: 45%;
-  height: 300px;
+.banner-img-area {
+  margin-right: 80px;
 }
-
+.banner-img-area img {
+}
 
 /* Media Queries For Mobile Device */
 @media screen and (max-width: 576px) {
@@ -123,4 +136,6 @@ header {
     font-size: 25px;
   }
   /* navbar style end */
+
+  /* banner-section  */
 }
