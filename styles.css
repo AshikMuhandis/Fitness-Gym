@@ -22,7 +22,6 @@
   font-weight: 500;
   border-radius: 42px;
   padding: 16px 40px;
-  margin: 20px auto;
   cursor: pointer;
   background-color: rgb(230, 83, 60);
 }
@@ -35,9 +34,8 @@
   font-weight: 500;
   border-radius: 42px;
   padding: 16px 40px;
-  margin-left: 15px;
   cursor: pointer;
-  background-color: black;
+  background-color: transparent;
 }
 
 /* navbar style start */
@@ -51,7 +49,6 @@ header {
   background-repeat: no-repeat;
   color: white;
   max-width: 1440px;
-  height: 740px;
   margin: 0 auto;
 }
 .nav-main {
@@ -113,11 +110,46 @@ header {
   font-weight: 900;
 }
 
+.banner-btn{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .banner-img-area {
   margin-right: 80px;
+  position: relative;
 }
-.banner-img-area img {
+
+.play-icon{
+  font-size: 40px;
+  margin-right: 15px;
 }
+.card1 {
+  position: absolute;
+  background: rgba(48, 48, 48, 0.54);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  top: 400px;
+  left: -100px;
+  display: flex;
+  backdrop-filter: blur(10px);
+  
+}
+
+.card2 {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 1.2rem;
+  backdrop-filter: blur(20px);
+  padding: 10px 10px 10px 25px ;
+  top: 140px;
+  right: -60px;
+}
+
 
 /* Media Queries For Mobile Device */
 @media screen and (max-width: 576px) {
@@ -138,4 +170,16 @@ header {
   /* navbar style end */
 
   /* banner-section  */
+  .banner-container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .banner-text-area {
+    margin: 5px 50px;
+  }
+  .banner-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
 }
