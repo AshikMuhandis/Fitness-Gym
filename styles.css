@@ -44,8 +44,8 @@ header {
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
-    rgb(36, 36, 36),
-    rgb(17, 17, 17)
+    rgb(34, 34, 34),
+    rgb(5, 5, 5)
   );
   font-family: "Inter", sans-serif;
   background-repeat: no-repeat;
@@ -166,13 +166,37 @@ header {
 }
 
 /* main body */
-body{
+main{
   background-color: rgb(0, 0, 0);
   font-family: "Inter", sans-serif;
+  color: white;
 }
 
 /* Habits section start */
+.habits-main{
+  text-align: center;
+}
 
+.habits-title{
+  font-size: 3rem;
+  font-weight: 900;
+  padding-top: 80px;
+}
+
+.habits-items{
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.habits-items img{
+  border-radius: 100px;
+  border: 3px solid rgba(126, 126, 126, 0.3);
+}
+
+.habits-items h4{
+  margin: 6px;
+}
 
 
 
@@ -242,4 +266,27 @@ body{
     right: -40px;
   }
   /* banner responsive end */
+
+  /* Habits section start */
+.habits-main{
+  text-align: center;
+}
+
+.habits-title{
+  font-size: 2.3rem;
+  font-weight: 900;
+  padding: 0px;
+}
+
+.habits-items{
+  flex-direction: column;
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+
 }
