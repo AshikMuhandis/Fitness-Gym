@@ -43,7 +43,8 @@ header {
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
-    rgba(0, 0, 0, 0.69) 100%
+    rgb(36, 36, 36),
+    rgb(17, 17, 17)
   );
   font-family: "Inter", sans-serif;
   background-repeat: no-repeat;
@@ -110,7 +111,14 @@ header {
   font-weight: 900;
 }
 
-.banner-btn{
+#shape {
+  font-family: "Miama", sans-serif;
+  font-size: 150px;
+  line-height: 0;
+  font-weight: 400;
+}
+
+.banner-btn {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
@@ -121,7 +129,7 @@ header {
   position: relative;
 }
 
-.play-icon{
+.play-icon {
   font-size: 40px;
   margin-right: 15px;
 }
@@ -135,7 +143,6 @@ header {
   left: -100px;
   display: flex;
   backdrop-filter: blur(10px);
-  
 }
 
 .card2 {
@@ -145,11 +152,10 @@ header {
   border-radius: 12px;
   font-size: 1.2rem;
   backdrop-filter: blur(20px);
-  padding: 10px 10px 10px 25px ;
+  padding: 10px 10px 10px 25px;
   top: 140px;
   right: -60px;
 }
-
 
 /* Media Queries For Mobile Device */
 @media screen and (max-width: 576px) {
@@ -167,19 +173,42 @@ header {
     display: block;
     font-size: 25px;
   }
-  /* navbar style end */
+  /* navbar responsive end */
 
-  /* banner-section  */
+  /* banner-section responsive */
   .banner-container {
     flex-direction: column;
     justify-content: space-around;
   }
   .banner-text-area {
-    margin: 5px 50px;
+    margin: 5px 20px;
   }
   .banner-title {
     font-size: 2.5rem;
     font-weight: 900;
   }
+  #shape {
+    font-size: 100px;
+  }
 
+  .btn-primary,
+  .btn-secondary {
+    font-size: 1rem;
+    padding: 14px 30px;
+  }
+
+  .card1 {
+    border-radius: 12px;
+    padding: 12px;
+    top: 250px;
+    left: 10px;
+  }
+
+  .card2 {
+    font-size: 1rem;
+    padding: 10px;
+    top: 50px;
+    right: -40px;
+  }
+  /* banner responsive end */
 }
