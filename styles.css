@@ -8,6 +8,7 @@
 
 /* shared style */
 .description {
+  text-align: center;
   font-size: .87rem;
   font-weight: 400;
   line-height: 20px;
@@ -218,6 +219,7 @@ main{
 .run-card-des{
   padding: 25px 0px;
   line-height: 25px;
+  text-align: start;
 }
 
 .btn-run {
@@ -293,10 +295,41 @@ main{
   background-color: rgb(230, 83, 60);
   cursor: pointer;
 }
-
 /* Course Plan section end */
 
+/* BMI Calculator Section start */
+.bmi-container{
+  display: flex;
+  justify-content: space-around;
+}
 
+.bmi-chart{
+
+}
+
+table{
+  border-collapse: collapse;
+
+}
+
+th, td{
+  border: 1.5px solid rgb(128, 128, 128);
+  padding: 11px 17px;
+  text-align: start;
+}
+
+.bmi-second-title{
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-top: 50px;
+}
+
+.bmi-calculate{
+  max-width: 577px;
+  /* border: 1px solid red; */
+}
+
+/* BMI Calculator Section end */
 
 
 
