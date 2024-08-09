@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-.
 
 <head>
   <meta charset="UTF-8" />
@@ -182,9 +181,11 @@
 
     <!-- BMI Calculator Section start -->
     <section>
-      <h1 class="habits-title">BMI Calculator</h1>
-      <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of
-        income or access to a gym.</p>
+      <div class="bmi-title-left">
+        <h1 class="bmi-title">BMI Calculator</h1>
+        <p class="bmi-description">We believe fitness should be accessible to everyone, everywhere, regardless of
+          income or access to a gym.</p>
+      </div>
       <div class="bmi-container">
         <div class="bmi-chart">
           <table>
@@ -193,7 +194,7 @@
               <th>BMI</th>
               <th>Weight Status</th>
             </thead>
-            <tbody>
+            <tbody class="bmi-description">
               <tr>
                 <td>Below 18.5</td>
                 <td>Underweight</td>
@@ -216,18 +217,26 @@
 
         <div class="bmi-calculate">
           <h2 class="bmi-second-title">Calculate your BMI</h2>
-          <p class="description">We believe fitness should be accessible to everyone, everywhere, regardless of <br>
-            income or access to a gym.
+          <p class="bmi-description">
+            We believe fitness should be accessible to everyone, everywhere, regardless
           </p>
+          <div class="calculate-input-container">
+            <input type="text" name="" id="" placeholder="Height/cm">
+            <input type="text" name="" id="" placeholder="Weight/kg">
+            <input type="text" name="age" id="age" placeholder="age">
+
+            <select name="gander" id="gender">
+              <option value="">Sex</option>
+              <option value="">Male</option>
+              <option value="">Female</option>
+            </select>
+            <select name="" id="activity-factor">
+              <option value="">Select an activity factor</option>
+              <option value="">ki Dimu?</option>
+            </select>
+            <button class="btn-calculate">Calculate</button>
+          </div>
         </div>
-
-
-
-
-
-
-
-
       </div>
     </section>
     <!-- BMI Calculator Section end -->
