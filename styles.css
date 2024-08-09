@@ -311,7 +311,7 @@ main{
 .bmi-description {
   font-size: .87rem;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   letter-spacing: 0.2px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -326,6 +326,7 @@ main{
   display: flex;
   justify-content: space-around;
   background-color: rgb(34, 34, 34);
+  margin-bottom: 50px;
 }
 
 table{
@@ -333,7 +334,7 @@ table{
 }
 
 th, td{
-  border: 1.5px solid rgb(128, 128, 128);
+  border: 2px solid rgba(128, 128, 128, 0.2);
   padding: 11px 17px;
   text-align: start;
 }
@@ -347,7 +348,7 @@ th, td{
   grid-template-columns: repeat(2, 1fr);
 }
 
-input, select, option{
+input, select {
   padding: 10px 40px 10px 20px;
   border-radius: 8px;
   border: none;
@@ -355,8 +356,12 @@ input, select, option{
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.3);
   background-color:rgba(255, 255, 255, 0.1);
-
 } 
+
+select option {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  }
 
 #activity-factor{
  grid-column: 1/3;
@@ -378,7 +383,38 @@ input, select, option{
 
 /* BMI Calculator Section end */
 
+/* Team section start */
+.trainer-img{
+  display: grid;
+  margin: 20px auto;
+  max-width: 1080px;
+  position: relative;
+  border-radius: 18px;
+  grid-template-columns: repeat(3, 1fr);
+  background: rgba(255, 255, 255, 0.1);
+}
 
+.trainer-img img{
+  width: 320px;
+  height: 270px;
+  padding: 20px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.jerome-bell{
+  position: absolute;
+  left: 40px;
+  top: 230px;
+}
+.cameron{
+  position: absolute;
+  left: 40px;
+  top: 230px;
+  left: 400px;
+}
+
+/* Team section end */
 
 /* Media Queries For Mobile Device */
 @media screen and (max-width: 576px) {
@@ -489,7 +525,7 @@ input, select, option{
 }
 /* Course Plan responsive end */
 
-/* BMI Section start */
+/* BMI Section responsive start */
 
 .bmi-title-left{
   margin: 30px;
@@ -550,4 +586,17 @@ input, select, option{
 .calculate-input-container{
   grid-template-columns: repeat(2, 190px);
 }
+/* BMI Section responsive end */
+
+/* Team Section Responsive */
+.trainer-img{
+  display: grid;
+  margin: 20px auto;
+  max-width: fit-content;
+  border-radius: 18px;
+  grid-template-columns: repeat(1, 1fr);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
 }
