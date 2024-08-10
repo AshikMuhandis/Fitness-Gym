@@ -167,12 +167,12 @@ header {
 
 
 /* main body */
-main{
+body{
+  color: white;
+  margin: 0 auto;
+  max-width: 1440px;
   background-color: rgb(0, 0, 0);
   font-family: "Inter", sans-serif;
-  color: white;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 /* Habits section start */
@@ -312,6 +312,7 @@ main{
   font-size: .87rem;
   font-weight: 400;
   margin-bottom: 15px;
+  line-height: 22px;
   letter-spacing: 0.2px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -387,7 +388,7 @@ select option {
 .trainer-img{
   display: grid;
   margin: 20px auto;
-  max-width: 1080px;
+  max-width: 1060px;
   position: relative;
   border-radius: 18px;
   grid-template-columns: repeat(3, 1fr);
@@ -397,24 +398,76 @@ select option {
 .trainer-img img{
   width: 320px;
   height: 270px;
-  padding: 20px;
+  padding: 15px;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 40px;
 }
 
-.jerome-bell{
+.jerome{
   position: absolute;
   left: 40px;
   top: 230px;
 }
 .cameron{
   position: absolute;
-  left: 40px;
   top: 230px;
   left: 400px;
 }
-
+.darrell{
+  position: absolute;
+  top: 230px;
+  left: 760px;
+}
+.dianee{
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+}
+.cody{
+  position: absolute;
+  bottom: 20px;
+  left: 400px;
+}
+.theresa{
+  position: absolute;
+  bottom: 20px;
+  left: 760px;
+}
 /* Team section end */
+
+/* Footer section start */
+.footer-container{
+  margin-top: 80px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand-name{
+  color: rgb(230, 83, 60);
+  font-size: 4.3rem;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.footer-items{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 120px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Footer section end */
 
 /* Media Queries For Mobile Device */
 @media screen and (max-width: 576px) {
@@ -588,15 +641,57 @@ select option {
 }
 /* BMI Section responsive end */
 
-/* Team Section Responsive */
+/* Team Section Responsive start */
 .trainer-img{
-  display: grid;
-  margin: 20px auto;
   max-width: fit-content;
-  border-radius: 18px;
   grid-template-columns: repeat(1, 1fr);
   background: rgba(255, 255, 255, 0.1);
 }
+
+.jerome{
+  top: 230px;
+  left: 40px;
+}
+.cameron{
+  top: 530px;
+  left: 40px;
+}
+.darrell{
+  top: 830px;
+  left: 40px;
+}
+.dianee{
+  bottom: 620px;
+  left: 40px;
+}
+.cody{
+  bottom: 320px;
+  left: 40px;
+}
+.theresa{
+  bottom: 20px;
+  left: 40px;
+}
+
+/* Team section Responsive end */
+
+/* footer responsive start */
+.footer-container{
+  padding-left: 30px;
+  padding-top: 40px;
+  flex-direction: column;
+}
+
+.footer-items{
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+}
+
+.footer-copyright{
+
+}
+
+/* footer responsive end */
 
 
 }
