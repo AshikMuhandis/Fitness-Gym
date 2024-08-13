@@ -88,6 +88,12 @@ header {
   padding: 8px 20px;
 }
 
+.active-btn {
+  margin: 7px 0px;
+  border-radius: 46px;
+  background-color: rgb(230, 83, 60);
+}
+
 .nav-menu a:hover {
   border-radius: 46px;
   background-color: rgb(230, 83, 60);
@@ -137,7 +143,6 @@ header {
 
 .banner-img-area {
   position: relative;
-
 }
 
 .banner-img-area img {
@@ -155,7 +160,7 @@ header {
   border-radius: 12px;
   padding: 15px;
   top: 70%;
-  left: -15% ;
+  left: -15%;
   display: flex;
   backdrop-filter: blur(10px);
 }
@@ -248,9 +253,9 @@ body {
   width: 365px;
   height: 310px;
   object-fit: none;
-  object-position: 66% 30%; 
+  object-position: 66% 30%;
   border-radius: 14px;
-} 
+}
 /* Run card section end */
 
 /* Course Plan section start */
@@ -538,12 +543,12 @@ hr {
     font-size: 40px;
     margin-right: 15px;
   }
-  
+
   .card1 {
     top: 65%;
     left: 20%;
   }
-  
+
   .card2 {
     top: 12%;
     right: 22%;
@@ -680,7 +685,6 @@ hr {
 }
 /* Media Queries end Medium Device */
 
-
 /* Media Queries For Mobile Device */
 @media screen and (max-width: 576px) {
   .nav-container {
@@ -766,7 +770,7 @@ hr {
     font-size: 2.2rem;
     font-weight: 900;
   }
-  
+
   .run-card-img img {
     margin-top: 35px;
     width: 100%;
@@ -819,7 +823,6 @@ hr {
     font-size: 1rem;
     margin: 50px 0px 20px 0px;
   }
-
 
   .bmi-title-left {
     margin: 30px;
